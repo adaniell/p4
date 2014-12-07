@@ -4,7 +4,7 @@
 [http://p4.ashleydaniell.com](http://p4.ashleydaniell.com)
 
 ## Description
-An application generating random lorem ipsum text and user-name data. 
+Task Manager Application
 
 ## Demo
 Please view screencast here: []() 

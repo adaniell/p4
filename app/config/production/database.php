@@ -9,7 +9,7 @@ return array(
             'host'      => 'localhost',
             'database'  => 'manager',
             'username'  => 'root',
-            'password'  => 'BR6fZ1Og3b', 
+            'password'  => 'BR6fZ1Og3b',
         ),
 
     ),

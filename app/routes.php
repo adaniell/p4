@@ -149,3 +149,18 @@ Route::get('/debug', function() {
     echo '</pre>';
 
 });
+
+Route::get('/all', function()
+{
+    return View::make('all');
+});
+
+Route::get('/incomplete', function()
+{
+    return View::make('index');
+});
+
+Route::get('/complete', function()
+{
+    return View::make('index');
+});

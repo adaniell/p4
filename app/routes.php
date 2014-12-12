@@ -157,7 +157,7 @@ Route::get('/all', function()
 
 Route::get('/incomplete', function()
 {
-    return View::make('index');
+    return View::make('all');
 });
 
 Route::get('/complete', function()

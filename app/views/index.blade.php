@@ -11,9 +11,9 @@
    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1>Task Manager Application</h1>
+        <p>Welcome!</p>
+        <p><a class="btn btn-primary btn-lg" href="/create" role="button">Add Task &raquo;</a></p>
       </div>
     </div>
 
@@ -22,17 +22,17 @@
       <div class="row">
         <div class="col-md-4">
           <h2>All Tasks</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p>View a list of all your tasks. </p>
           <p><a class="btn btn-default" href="/all" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Incomplete Tasks</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p>View a list of all your incomplete tasks. </p>
           <p><a class="btn btn-default" href="/incomplete" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Completed Tasks</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>View a list of all your completed tasks. </p>
           <p><a class="btn btn-default" href="/complete" role="button">View details &raquo;</a></p>
         </div>
       </div>

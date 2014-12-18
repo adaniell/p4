@@ -19,9 +19,6 @@
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="/assets/js/ie-emulation-modes-warning.js"></script>
@@ -57,8 +54,10 @@
 			@endif
 
       @if(Session::get('flash_message'))
-            <div class='flash-message' style='color:white;'>{{ Session::get('flash_message') }}</div>
+            <div class='flash-message' style='color:red;margin-top:10px;'>{{ Session::get('flash_message') }}</div>
         @endif
+
+
           </div>
         </div><!--/.navbar-collapse -->
 
@@ -66,6 +65,7 @@
       </div>
     </nav>
 
+<div style="margin-top:20px;">&nbsp;</div>
 
 <div class="container">
 
@@ -75,7 +75,8 @@
 
 <hr>
 	<footer>
-        <p>&copy; Company 2014</p>
+    <p><a class="btn btn-primary btn-lg" href="/message_board" role="button">Message Board &raquo;</a></p>
+        <p>&copy; Ashley Daniell 2014</p>
       </footer>
 </div>
 
@@ -86,6 +87,9 @@
     <script src="/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 	
 </body>
 </html>

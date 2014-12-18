@@ -12,7 +12,13 @@
 */
 
 /**
-* User
+* Index
+*/
+Route::get('/', 'IndexController@getIndex');
+
+
+/**
+* Users
 * (Explicit Routing)
 */
 Route::get('/signup','UserController@getSignup' );
@@ -22,27 +28,31 @@ Route::post('/login', 'UserController@postLogin' );
 Route::get('/logout', 'UserController@getLogout' );
 
 
+/**
+* Tasks
+* (Explicit Routing)
+*/
+Route::get('/all', 'TaskController@getIndex');
+Route::get('/create', 'TaskController@getCreate');
+Route::post('/create', 'TaskController@postCreate');
+Route::get('/edit/{task_id}', 'TaskController@getEdit');
+Route::post('/edit/{task_id}', 'TaskController@postEdit');
+Route::get('/delete/{task_id}', 'TaskController@getDelete');
+Route::post('/delete/{task_id}', 'TaskController@postDelete');
+Route::get('/complete', 'TaskController@getComplete');
+Route::get('/incomplete', 'TaskController@getInComplete');
 
-
-Route::get('/', function()
-{
-	return View::make('index');
-});
+/**
+* Comments
+* (Explicit Routing)
+*/
+Route::get('/message_board', 'CommentController@getIndex');
+Route::get('/create_comment', 'CommentController@getCreate');
+Route::post('/create_comment', 'CommentController@postCreate');
 
 use Paste\Pre;
 
-Route::get('mysql-test', function() {
 
-    # Print environment
-    echo 'Environment: '.App::environment().'<br>';
-
-    # Use the DB component to select all the databases
-    $results = DB::select('SHOW DATABASES;');
-
-    # If the "Pre" package is not installed, you should output using print_r instead
-    echo Pre::render($results);
-
-});
 
 Route::get('/debug', function() {
 
@@ -89,17 +99,3 @@ Route::get('/debug', function() {
 
 });
 
-Route::get('/all', function()
-{
-    return View::make('all');
-});
-
-Route::get('/incomplete', function()
-{
-    return View::make('all');
-});
-
-Route::get('/complete', function()
-{
-    return View::make('index');
-});

@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'mail@taskmanager.com', 'name' => 'Task Manager'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	'username' => 'postmaster@sandbox5dfc1ab1701a45128784111db6ea294f.mailgun.org',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	'password' => '6ac0e7af8cfb7d6096034b699ae070ea',
 
 	/*
 	|--------------------------------------------------------------------------

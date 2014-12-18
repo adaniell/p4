@@ -1,9 +1,12 @@
 
 @extends('master')
 
+
+
 @section('title')
   View All Tasks
 @stop
+
 
 
 @section('content')

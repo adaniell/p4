@@ -50,19 +50,24 @@
            	@if(Auth::check())
     			<a href='/logout' class="btn btn-success">Log out {{ Auth::user()->email; }}</a>
 			@else 
-    			<a href='/signup' class="btn btn-success">Sign up</a> or <a href='/login' class="btn btn-success">Log in</a>
+    			<a href='/signup' class="btn btn-success">Sign up</a>  <a href='/login' class="btn btn-success">Log in</a>
 			@endif
 
-	 		@if(Session::get('flash_message'))
-       			<div class='flash-message'>{{ Session::get('flash_message') }}</div>
-   			@endif
+      @if(Session::get('flash_message'))
+            <div class='flash-message' style='color:white;'>{{ Session::get('flash_message') }}</div>
+        @endif
           </div>
         </div><!--/.navbar-collapse -->
+
+
       </div>
     </nav>
 
 
 <div class="container">
+
+       
+
 	@yield('content')
 
 <hr>

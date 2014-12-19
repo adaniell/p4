@@ -8,7 +8,7 @@ class CommentController extends BaseController
     }
     public function getIndex()
     {
-    	$comments = comment::all();
+    	$comments = Comment::all();
         return View::make('comment_index')->with('comments',$comments);
     }
     public function getCreate()

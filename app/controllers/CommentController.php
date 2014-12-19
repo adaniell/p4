@@ -27,7 +27,7 @@ class CommentController extends BaseController
         ->withInput()
         ->withErrors($validator);
         }
-        $comment = new comment();
+        $comment = new Comment();
         $comment->subject = Input::get('subject');
         $comment->comment_text = Input::get('comment_text');
         $comment->user_id = Auth::id();

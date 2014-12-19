@@ -18,6 +18,7 @@ Welcome to Your Task List
   
 			<h3>{{ $task['title'] }}</h3> 
 			<p><strong>Added:</strong> <em>{{ $task['created_at']}}</em></p>
+			<p><strong>Updated:</strong> <em>{{ $task['updated_at']}}</em></p>
 				
 			<p>	{{ $task['description'] }} </p>
 

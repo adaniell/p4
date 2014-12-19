@@ -24,7 +24,7 @@ class CreateTasksTable extends Migration {
 			# General data
 			$table->string('title');
 			$table->string('description');
-			$table->boolean('completed');
+			$table->boolean('complete');
 			$table->integer('user_id')->unsigned();
 			
 

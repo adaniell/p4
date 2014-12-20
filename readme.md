@@ -26,7 +26,7 @@ Please view screencast here: [http://screencast.com/t/nzwk21iWR](http://screenca
 
 ## Details for teaching team
 1. Logic is located in Controllers
-2. Passed HTML Validation [View](http://validator.w3.org/check?uri=http%3A%2F%2Fp4.ashleydaniell.com%2F)
+2. Passed HTML Validation: [View](http://validator.w3.org/check?uri=http%3A%2F%2Fp4.ashleydaniell.com%2F)
 
 ## Outside code 
 I am using Bootstrap Framework [http://getbootstrap.com/](http://getbootstrap.com/)

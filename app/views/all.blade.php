@@ -10,6 +10,7 @@ Welcome to Your Task Library
 	<h1>Welcome to Your Task Manager Library</h1>
 	@if ($tasks->isEmpty())
 		<p>You currently do not have any tasks.</p>
+		<p><a class="btn btn-primary btn-lg" href="/create" role="button">Add Task &raquo;</a></p>
 
 	@else
 		@foreach ($tasks as $task)
@@ -21,7 +22,7 @@ Welcome to Your Task Library
 			<p>	{{ $task['description'] }} </p>
 
 			<p>
-				<strong>Task complete?</strong> {{ $task['complete'] ? 'Yes' : 'Not yet' }}
+				<strong>Complete?</strong> {{ $task['complete'] ? '<span class="complete">Yes</span>' : '<strong>Not yet</strong>' }}
 			</p>
 				
 				<a href="{{ action('TaskController@getEdit', $task->id) }}">
@@ -31,7 +32,11 @@ Welcome to Your Task Library
 				<a href="{{ action('TaskController@getDelete', $task->id) }}">
 					<button type="button" class="btn btn-xs btn-danger">Delete</button>
 				</a>
+				<a href="{{ action('TaskController@getCreate', $task->id) }}">
+					<button type="button" class="btn btn-xs btn-info">Add Another Task</button>
+				</a>
 			</p>
+		<hr>
 		@endforeach
 	@endif
 

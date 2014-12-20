@@ -11,17 +11,14 @@
     <title>@yield('title','Task Manager')</title>
 
 
-
+    <!-- Custom Css -->
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -69,15 +66,19 @@
 
 <div class="container">
 
-       
+  @yield('content')
 
-	@yield('content')
+  <hr>
+  	<footer>
+        <p><a class="btn btn-primary btn-lg" href="/message_board" role="button">Message Board &raquo;</a>
 
-<hr>
-	<footer>
-    <p><a class="btn btn-primary btn-lg" href="/message_board" role="button">Message Board &raquo;</a></p>
+        {{ HTML::mailto('adaniell547@gmail.com', 'Submit Feedback &raquo;', array('class' => 'btn btn-primary btn-lg')) }}
+
+       </p>
+
         <p>&copy; Ashley Daniell 2014</p>
-      </footer>
+    </footer>
+    
 </div>
 
 	 <!-- Bootstrap core JavaScript

@@ -1,0 +1,10 @@
+.comment {
+	border:2px solid red;
+}
+
+.complete {
+	background-color: gray;
+	padding:5px;
+	color: white;
+	
+}

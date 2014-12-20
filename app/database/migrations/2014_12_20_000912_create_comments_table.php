@@ -20,7 +20,7 @@ class CreateCommentsTable extends Migration {
 
 			# General data
 			$table->string('subject'); 
-			$table->text('comments_text');
+			$table->text('comment_text');
 			$table->integer('user_id')->unsigned(); 
 			
 			# Define foreign keys...

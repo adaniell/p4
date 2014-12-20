@@ -1,11 +1,9 @@
 @extends('master')
 
 @section('title')
-Welcome to Your Task List
+Welcome to Your Task Library
 @stop
 
-@section('head')
-@stop
 
 @section('content')
 

@@ -22,6 +22,11 @@ Message Board
 		{{ Form::textarea('comment_text'); }}
 	</div>
 
+	<div class='form-group'>
+		{{ Form::label('from', 'From') }}  </br>
+		{{ Form::text('from'); }}
+	</div>
+
 	{{ Form::submit('Add', array('class' => 'btn btn-lg btn-default')); }}
 
 {{ Form::close() }}
